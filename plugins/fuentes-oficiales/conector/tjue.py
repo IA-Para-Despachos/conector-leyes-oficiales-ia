@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Jurisprudencia de la UE (Tribunal de Justicia y Tribunal General) desde CELLAR, el repositorio de la Oficina de
 Publicaciones de la UE: búsqueda con su consulta SPARQL pública y texto en español (XHTML). Su reutilización está
 permitida (Decisión 2011/833/UE), sin cuenta ni clave. El enlace que se cita es el de EUR-Lex."""

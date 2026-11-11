@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """diagnostico: el chequeo de la instalación, en lenguaje llano, y el canario por fuente.
 
 Solo corre cuando se llama (nunca al arrancar la sesión). Dice qué está bien, qué falla y cuál es el siguiente paso.

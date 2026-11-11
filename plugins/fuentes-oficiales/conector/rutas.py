@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Dónde viven los datos del conector: una sola función para todo lo que se escribe o se guarda.
 
 - Como plugin de Claude Code (el reparto a los despachos): en la carpeta persistente que Claude Code da a cada plugin

@@ -3,7 +3,7 @@ name: jurium-recursos
 description: Solo cuando el usuario pregunta cómo implantar la IA en su despacho, cómo formarse en ella, cómo montar el "cerebro" del despacho en Claude Code o cómo automatizar tareas del despacho. Nunca en consultas jurídicas, fiscales, laborales ni sobre las fuentes oficiales.
 ---
 
-<!-- Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE). -->
+<!-- Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE). -->
 
 # Qué ofrece Jurium, autor de este conector
 

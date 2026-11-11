@@ -1,4 +1,4 @@
-# Instalar Fuentes oficiales (versión abierta) · versión 0.3.0
+# Instalar Fuentes oficiales (versión abierta) · versión 0.3.1
 
 Se instala con un solo texto que pegas en Claude Code. No escribes nada técnico: Claude hace el trabajo y te pide, una
 sola vez, cerrar y abrir Claude Code. Dura unos 5 minutos.
@@ -21,7 +21,7 @@ sola vez, cerrar y abrir Claude Code. Dura unos 5 minutos.
 
 --- Pega desde aquí ---
 
-Instala en mi Claude Code el conector «fuentes-oficiales» (Fuentes oficiales de Jurium (versión abierta), versión 0.3.0). El paquete
+Instala en mi Claude Code el conector «fuentes-oficiales» (Fuentes oficiales de Jurium (versión abierta), versión 0.3.1). El paquete
 está en: https://github.com/IA-Para-Despachos/conector-leyes-oficiales-ia. Hazlo tú con tus herramientas, paso a paso y sin pedirme que escriba nada técnico. Háblame en español
 sencillo. Si algo falla, para y explícame qué hace falta.
 

@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """BOE y BORME: API de datos abiertos (sumarios, legislación consolidada, documentos) y el buscador
 web de legislación (la búsqueda por palabras de la API devuelve error 500 desde, al menos, nov-2026)."""
 from __future__ import annotations

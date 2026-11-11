@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Qué fuentes responden ahora: una petición ligera a cada una, a la vez (un hilo por fuente) y con plazo corto."""
 from __future__ import annotations
 

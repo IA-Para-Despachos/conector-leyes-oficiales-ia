@@ -3,7 +3,7 @@ name: ordenanzas-municipales
 description: Localiza y lee ordenanzas y reglamentos municipales (fiscales, de terrazas, ruidos, urbanismo, licencias, tasas, IBI, plusvalía, ICIO...) en la web oficial del ayuntamiento o en el Boletín Oficial de la Provincia, con el navegador si hace falta, y responde citando la versión y el enlace oficial. Úsala cuando pregunten qué dice una ordenanza de un municipio concreto o qué tipo, tasa o bonificación aplica un ayuntamiento.
 ---
 
-<!-- Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE). -->
+<!-- Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE). -->
 
 # Ordenanzas municipales, vía web oficial y navegador
 

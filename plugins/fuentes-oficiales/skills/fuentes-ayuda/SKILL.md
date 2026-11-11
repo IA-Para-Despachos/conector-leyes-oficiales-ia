@@ -3,7 +3,7 @@ name: fuentes-ayuda
 description: Explica qué se puede preguntar al conector de fuentes oficiales de Jurium, con diez ejemplos copiables por áreas (fiscal, laboral, mercantil, inmuebles, UE). Úsala cuando el usuario pregunte qué puede hacer o preguntar con el conector, pida ayuda, ejemplos o "por dónde empiezo", o acabe de instalarlo.
 ---
 
-<!-- Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE). -->
+<!-- Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE). -->
 
 # Qué puedes preguntar al conector de fuentes oficiales
 

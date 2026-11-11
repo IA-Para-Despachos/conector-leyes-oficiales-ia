@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Conector de fuentes oficiales españolas (Jurium). Servidor MCP local por stdio, solo librería estándar.
 
 Arranque: python -I -B servidor.py (lo lanza Claude Code desde .mcp.json). Cada llamada corre en un proceso trabajador
@@ -739,6 +739,8 @@ class _Trabajador:
                                         stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
         try:  # atado al servidor: si a este lo matan de golpe, el sistema mata al trabajador (y a sus hijos)
             self.job = pdf.atar_al_padre(self.proceso)
+            if sys.platform == "darwin":  # macOS no admite RLIMIT_AS: el servidor vigila la memoria del trabajador
+                pdf.vigilar_memoria(self.proceso, MEMORIA_TRABAJADOR)
         except pdf.PdfError:
             self._matar()
             raise

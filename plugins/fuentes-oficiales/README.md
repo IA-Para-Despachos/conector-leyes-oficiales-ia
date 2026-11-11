@@ -61,4 +61,4 @@ Nada promocional sale en la respuesta de ninguna herramienta jurídica.
 ## Licencia
 Código bajo licencia MIT ([LICENSE](LICENSE)). El nombre y el logo de Jurium no se licencian.
 
-Versión 0.3.0. Cambios en [NOVEDADES.md](NOVEDADES.md); dudas de instalación en [FAQ.md](FAQ.md).
+Versión 0.3.1. Cambios en [NOVEDADES.md](NOVEDADES.md); dudas de instalación en [FAQ.md](FAQ.md).

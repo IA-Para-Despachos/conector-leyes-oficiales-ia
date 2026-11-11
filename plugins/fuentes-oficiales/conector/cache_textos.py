@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Caché en disco del texto ya extraído (nunca el PDF), en datos/textos/ (fuera de git). Decidido por Jurium (ronda 19):
 la segunda lectura de un convenio es instantánea y una sentencia guardada se puede leer después de borrar su PDF.
 

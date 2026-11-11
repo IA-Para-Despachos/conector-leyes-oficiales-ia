@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Texto de un PDF de boletín oficial con la librería estándar (sin dependencias), con topes de memoria y tiempo.
 
 Lee lo que publican los boletines (BOE, autonómicos, BOP): flujos Flate, flujos de objetos, fuentes con ToUnicode o
@@ -14,6 +14,7 @@ import hashlib
 import re
 import subprocess
 import sys
+import threading
 import time
 import zlib
 
@@ -598,15 +599,23 @@ def texto_pdf_aislado(datos: bytes, plazo: float | None = None) -> str:
     plazo = PLAZO + 10 if plazo is None else min(PLAZO + 10, plazo)
     if plazo < 2:
         raise PdfError("La consulta agotó su tiempo total antes de leer el PDF; repítela.")
+    p = subprocess.Popen([sys.executable, "-I", "-B", __file__], stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                         stderr=subprocess.PIPE)
     try:
-        r = subprocess.run([sys.executable, "-I", "-B", __file__], input=datos, capture_output=True,
-                           timeout=plazo)
+        if sys.platform == "darwin":  # macOS no admite RLIMIT_AS: el tope lo vigila este proceso
+            vigilar_memoria(p, MAX_MEMORIA)
+        salida, error = p.communicate(datos, timeout=plazo)
     except subprocess.TimeoutExpired:
+        p.kill()
+        p.communicate()
         raise PdfError("El PDF tarda demasiado en leerse; se corta.") from None
-    if r.returncode != 0:
-        motivo = r.stderr.decode("utf-8", "replace").strip().splitlines()
-        raise PdfError(motivo[-1][:300] if motivo and r.returncode == 2 else "el lector de PDF falló con este archivo")
-    return r.stdout[:4 * MAX_TEXTO + 1000].decode("utf-8", "replace")
+    except BaseException:
+        p.kill()
+        raise
+    if p.returncode != 0:
+        motivo = error.decode("utf-8", "replace").strip().splitlines()
+        raise PdfError(motivo[-1][:300] if motivo and p.returncode == 2 else "el lector de PDF falló con este archivo")
+    return salida[:4 * MAX_TEXTO + 1000].decode("utf-8", "replace")
 
 
 def _job(tope: int | None):
@@ -649,9 +658,42 @@ def _limitar_memoria(tope: int = MAX_MEMORIA) -> None:
         job, k32 = _job(tope)
         if not k32.AssignProcessToJobObject(job, k32.GetCurrentProcess()):
             raise PdfError("No se pudo limitar la memoria del proceso; no se trabaja.")
+    elif sys.platform == "darwin":
+        return  # macOS rechaza RLIMIT_AS (y RLIMIT_DATA no se aplica): el tope lo pone el proceso padre, vigilar_memoria
     else:
         import resource
         resource.setrlimit(resource.RLIMIT_AS, (tope, tope))
+
+
+def _memoria_ps(pid: int) -> int | None:
+    """Memoria residente de un proceso en bytes, con ps (viene en macOS); None si ya no existe."""
+    r = subprocess.run(["/bin/ps", "-o", "rss=", "-p", str(int(pid))], capture_output=True, timeout=5)
+    campos = r.stdout.split()
+    return int(campos[0]) * 1024 if r.returncode == 0 and campos else None
+
+
+def vigilar_memoria(proceso, tope: int, leer=_memoria_ps, cada: float = 0.25) -> None:
+    """Solo macOS. Un hilo mira la memoria del hijo cada 'cada' s y lo mata si pasa de 'tope'. Si no se puede medir
+    (ps no responde), PdfError: sin tope no se trabaja. Medimos memoria residente, no virtual (en macOS la virtual de
+    Python es enorme desde el arranque)."""
+    try:
+        if leer(proceso.pid) is None and proceso.poll() is None:
+            raise OSError
+    except Exception:
+        raise PdfError("No se pudo vigilar la memoria del proceso (ps no responde); no se trabaja.") from None
+
+    def mirar() -> None:
+        while proceso.poll() is None:
+            try:
+                m = leer(proceso.pid)
+            except Exception:
+                m = None
+            if m is not None and m > tope:
+                proceso.kill()
+                return
+            time.sleep(cada)
+
+    threading.Thread(target=mirar, daemon=True).start()
 
 
 def cerrar_job(job) -> None:

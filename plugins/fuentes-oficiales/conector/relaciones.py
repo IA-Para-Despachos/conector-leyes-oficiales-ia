@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Grafo normativo del BOE: qué normas modifican, derogan, desarrollan o declaran inconstitucional una norma (y a
 cuáles afecta ella), a partir del "análisis" de la API de datos abiertos; y, por artículo, qué norma dio cada versión
 (el bloque del texto consolidado). El análisis se pide en XML: en JSON el BOE solo devuelve una materia de varias."""

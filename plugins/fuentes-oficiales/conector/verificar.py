@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Verificación de las citas de un escrito: artículos y disposiciones de ley (contra el BOE consolidado), consultas
 de la DGT, resoluciones del TEAC, sentencias del TC, asuntos del TJUE y artículos de normas de la UE (contra su versión consolidada
 en CELLAR). Principio: nunca dar por erróneo ni por correcto lo que no se ha podido comprobar con seguridad. Si la ley de una cita no se identifica sin dudas, la cita va a "no comprobadas"."""

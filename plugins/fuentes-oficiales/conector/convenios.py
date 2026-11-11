@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Convenios colectivos: REGCON (registro oficial del Ministerio de Trabajo) para localizarlos y saber su estado, y
 su texto en el boletín donde se publicó (BOE, autonómico o BOP), leído en PDF o HTML.
 

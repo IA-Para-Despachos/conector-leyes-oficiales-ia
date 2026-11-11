@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Catastro (datos no protegidos), VIES (NIF-IVA europeo) y BDNS (subvenciones): APIs oficiales."""
 from __future__ import annotations
 

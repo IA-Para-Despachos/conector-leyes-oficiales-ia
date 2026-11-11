@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Red segura: solo HTTPS, solo dominios oficiales de la lista blanca y solo lectura.
 
 Cualquier URL (también una redirección) fuera de DOMINIOS se rechaza antes de conectar."""
@@ -62,7 +62,7 @@ BOLETINES = frozenset((  # solo estos valen como enlace de publicación de un co
 DOMINIOS |= {d: "fnmt" if d in _FNMT_BOLETINES else "sistema" for d in BOLETINES}
 MAX_BYTES = 8_000_000
 MAX_BYTES_PDF = 25_000_000  # un boletín entero en PDF puede pesar más que una página web
-VERSION = "0.3.0"
+VERSION = "0.3.1"
 # Marca de la copia: "desarrollo" aquí; empaquetar.py pone el perfil del paquete ("light" o "premium"). Va en el
 # User-Agent: un identificador opaco, sin datos de nadie.
 MARCA = "light"

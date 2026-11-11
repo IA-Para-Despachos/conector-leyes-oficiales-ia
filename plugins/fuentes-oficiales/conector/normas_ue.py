@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Normas de la UE (reglamentos, directivas, decisiones, Tratados y Carta) desde CELLAR, el repositorio de la Oficina
 de Publicaciones: el artículo de la última versión consolidada en español y la búsqueda por el título. Reutilización
 permitida (Decisión 2011/833/UE), sin cuenta ni clave. EUR-Lex solo se cita: su web exige JavaScript. También, qué

@@ -1,5 +1,10 @@
 # Novedades del conector de fuentes oficiales
 
+## 0.3.1 · noviembre de 2026
+- **Arreglo para Mac:** el conector no arrancaba en macOS («el sistema no dejó poner el tope de memoria»). macOS no
+  admite el límite de memoria que usábamos; ahora, en Mac, el servidor vigila la memoria de las herramientas y de la
+  lectura de PDF y las corta si se pasan, con el mismo tope que en Windows y Linux.
+
 ## 0.3.0 · noviembre de 2026
 - **Dos versiones, un solo código:** la versión abierta (BOE, UE, Catastro, VIES, subvenciones y BORME del día) y la de
   Líder IA (todo).

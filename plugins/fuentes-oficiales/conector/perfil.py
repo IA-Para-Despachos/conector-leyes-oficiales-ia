@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Perfil de esta copia del conector. En desarrollo, todo; empaquetar.py reescribe este archivo al generar un paquete.
 
 - PERFIL: "premium" (todo) o "light" (la ley abierta: BOE, UE, Catastro, VIES, subvenciones y BORME del día).

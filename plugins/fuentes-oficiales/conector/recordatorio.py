@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Hook UserPromptSubmit del plugin: si el mensaje trae una norma, una cita, un convenio o doctrina en juego, añade un
 recordatorio corto para que Claude consulte el conector. Si no, no dice nada (cada consulta tarda de 5 a 60 s: no debe
 saltar en cada mensaje). Nunca falla ni bloquea: ante cualquier problema, calla."""

@@ -1,4 +1,4 @@
-# Fuentes oficiales (versión abierta) 0.3.0. Hecho por Jurium. Licencia MIT (LICENSE).
+# Fuentes oficiales (versión abierta) 0.3.1. Hecho por Jurium. Licencia MIT (LICENSE).
 """Servidor MCP por stdio con la librería estándar (nació de Falso-CRM/mcp_server/stdio_mcp.py, hoy con cancelación,
 ejecutor aparte y tope de línea;
 código nuestro). Por qué sin el SDK `mcp`: cero código de terceros (regla del proyecto) y arranque

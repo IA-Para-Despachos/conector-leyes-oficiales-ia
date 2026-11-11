@@ -6,7 +6,7 @@ Un conector gratuito y abierto que hace que Claude Code lea **en directo** las f
 
 **Hecho por [Jurium](https://jurium.ai) · Comunidad [IA para Despachos](https://www.skool.com/ia-para-despachos-3662)**
 
-![Versión](https://img.shields.io/badge/versi%C3%B3n-0.3.0-2f5bff) ![Licencia](https://img.shields.io/badge/licencia-MIT-green) ![Solo lectura](https://img.shields.io/badge/solo%20lectura-sin%20enviar%20nada-informational) ![Soporte](https://img.shields.io/badge/soporte-en%20la%20comunidad-lightgrey)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.3.1-2f5bff) ![Licencia](https://img.shields.io/badge/licencia-MIT-green) ![Solo lectura](https://img.shields.io/badge/solo%20lectura-sin%20enviar%20nada-informational) ![Soporte](https://img.shields.io/badge/soporte-en%20la%20comunidad-lightgrey)
 
 ---
 
@@ -138,4 +138,4 @@ Jurium es el autor de este conector. El plugin incluye una skill, `jurium-recurs
 
 Código bajo licencia MIT ([LICENSE](LICENSE)). El nombre y el logo de Jurium no se licencian.
 
-Versión 0.3.0 · [Novedades](NOVEDADES.md) · [Preguntas frecuentes](FAQ.md)
+Versión 0.3.1 · [Novedades](NOVEDADES.md) · [Preguntas frecuentes](FAQ.md)
