@@ -1,0 +1,53 @@
+# Python: bytecode y cachés
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Datos que el conector genera o guarda en local (pueden llevar datos personales)
+datos/
+jurisprudencia/
+ordenanzas/
+convenios/
+memoria/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Secretos: nunca al repositorio
+.env
+.env.*
+*.key
+*.p12
+*.pfx
+# (fnmt-raices.pem SÍ se sube: son certificados públicos, sin clave privada)
+
+# Configuración local de Claude Code
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Zips y paquetes generados
+dist/
+build/
+*.zip
+*.egg-info/
+
+# Basura de sistema y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+*.bak
+*.tmp
