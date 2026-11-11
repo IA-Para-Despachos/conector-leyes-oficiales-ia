@@ -23,6 +23,23 @@ memoria/
 *.sqlite3
 *.log
 
+# Documentos de oficina: PDF de sentencias o convenios, Word, Excel... (pueden llevar datos personales)
+*.pdf
+*.doc
+*.docx
+*.dot
+*.dotx
+*.rtf
+*.odt
+*.xls
+*.xlsx
+*.xlsm
+*.ods
+*.ppt
+*.pptx
+*.odp
+*.csv
+
 # Secretos: nunca al repositorio
 .env
 .env.*
