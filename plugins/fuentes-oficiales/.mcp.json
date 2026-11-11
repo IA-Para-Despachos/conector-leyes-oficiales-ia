@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "fuentes-oficiales": {
+      "command": "python",
+      "args": [
+        "-I",
+        "-B",
+        "${CLAUDE_PLUGIN_ROOT}/conector/servidor.py"
+      ]
+    }
+  }
+}

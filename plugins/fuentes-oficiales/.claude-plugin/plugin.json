@@ -1,0 +1,13 @@
+{
+  "name": "fuentes-oficiales",
+  "displayName": "Fuentes oficiales · Jurium (versión abierta)",
+  "version": "0.3.0",
+  "description": "Fuentes oficiales abiertas (normas del BOE y de la UE, Catastro, VIES, subvenciones, BORME del día), consultadas en directo y citadas. Informativo, sin garantía. Hecho por Jurium · Comunidad IA para Despachos.",
+  "author": {
+    "name": "Jurium"
+  },
+  "license": "MIT",
+  "metadata": {
+    "perfil": "light"
+  }
+}
